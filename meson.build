@@ -6,3 +6,7 @@ project('ldb-asynctest', ['c'],
 
 ldb_asynctask_dep = dependency('ldb-asynctask',
     fallback : ['ldb-asynctask', 'ldb_asynctask_dep'])
+
+so_version = 1
+
+subdir('src')
